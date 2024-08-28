@@ -45,6 +45,7 @@ const App = () => {
 
   const toggleImportanceOf = id => {
     const item = items.find(n => n.id === id)
+    console.log(item)
     const changedItem = { ...item, important: !item.important }
   
     itemService
